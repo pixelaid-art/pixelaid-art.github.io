@@ -3130,27 +3130,7 @@ $(document).ready(function () {
 		}
 	});
 
-	// Placeholder для формы
-	$('.input').focus(function (e) {
-		$(this).prev('.placeholder').addClass('input_active');
-	});
-	$('.input').focusout(function (e) {
-		if (this.value === '') {
-			$(this).prev('.placeholder').removeClass('input_active');
-		}
-	});
-	$('.placeholder').click(function (e) {
-		$(this).next().focus();
-	});
-
-	// Чекбокс и кнопка
-	$('#agree').change(function () {
-		if ($(this).is(':checked'))
-			$('#submit').removeAttr('disabled');
-		else
-			$('#submit').attr('disabled', 'disabled');
-	});
-
+	// Активные ссылки меню
 	var sections = $('section')
 		, nav = $('#top-menu nav')
 		, nav_height = nav.outerHeight();
@@ -3176,48 +3156,6 @@ $(document).ready(function () {
 		var fixed_offset = 20;
 		$('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 500);
 		e.preventDefault();
-	});
-
-	// Отправка формы
-	$('#form').submit(function () {
-		$.post(
-			'post.php',
-			{
-				name: $('#name').val(),
-				email: $('#email').val(),
-				message: $('#message').val(),
-			},
-			function (msg) {
-				// $('#popup-text').html(msg);
-				// $('#myOverlay').fadeIn();
-				// $('.popup').fadeIn();
-				// $("#form").trigger("reset");
-
-			});
-		'json'
-		return false;
-	});
-
-
-	// Клик по ссылке "Закрыть".
-	$('.popup-close').click(function () {
-		$(this).parents('.popup-fade').fadeOut();
-		return false;
-	});
-
-	// Закрытие по клавише Esc.
-	$(document).keydown(function (e) {
-		if (e.keyCode === 27) {
-			e.stopPropagation();
-			$('.popup-fade').fadeOut();
-		}
-	});
-
-	// Клик по фону, но не по окну.
-	$('.popup-fade').click(function (e) {
-		if ($(e.target).closest('.popup').length == 0) {
-			$(this).fadeOut();
-		}
 	}); 
 
 });

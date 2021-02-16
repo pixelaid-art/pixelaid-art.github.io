@@ -964,151 +964,6 @@ body {
   border-bottom: #d5d5d5 2px dashed;
 }
 
-.placeholder-parent {
-  position: relative;
-}
-
-.placeholder {
-  font-size: calc(14px + 3 * ((100vw - 320px) / 880));
-  position: absolute;
-  top: 12px;
-  padding: 0 5px;
-  left: 25px;
-  color: #4c5151;
-  -webkit-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  transition: 0.5s all;
-  background: #fff;
-}
-
-.placeholder.input_active {
-  -webkit-transform: translateY(-23px);
-      -ms-transform: translateY(-23px);
-          transform: translateY(-23px);
-  font-size: calc(11px + 3 * ((100vw - 320px) / 880));
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  border: 2px solid #afafaf;
-  border-radius: 4px;
-}
-
-::-webkit-input-placeholder {
-  font-size: calc(14px + 3 * ((100vw - 320px) / 880));
-}
-
-::-moz-placeholder {
-  font-size: calc(14px + 3 * ((100vw - 320px) / 880));
-}
-
-:-ms-input-placeholder {
-  font-size: calc(14px + 3 * ((100vw - 320px) / 880));
-}
-
-::-ms-input-placeholder {
-  font-size: calc(14px + 3 * ((100vw - 320px) / 880));
-}
-
-::placeholder {
-  font-size: calc(14px + 3 * ((100vw - 320px) / 880));
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-  outline: 0;
-  border: 2px solid #292929;
-}
-
-#myOverlay {
-  z-index: 37;
-  position: fixed;
-  background: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  cursor: pointer;
-  display: none;
-}
-
-.popup {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 20px;
-  max-width: 300px;
-  max-height: 200px;
-  margin: auto;
-  background: #fff;
-  border: 1px solid orange;
-  border-radius: 4px;
-  z-index: 99999;
-  opacity: 1;
-  text-align: center;
-  display: none;
-}
-
-.popup-close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-.popup-text {
-  font-size: 16px;
-}
-
-.popup .close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 26px;
-  height: 26px;
-  opacity: 0.3;
-}
-
-.popup .close:hover {
-  opacity: 1;
-}
-
-.popup .close:before,
-.popup .close:after {
-  position: absolute;
-  left: 15px;
-  content: " ";
-  height: 26px;
-  width: 2px;
-  background-color: #333;
-}
-
-.popup .close:before {
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.popup .close:after {
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.input.error {
-  border: 2px solid #ff4747;
-}
-
-label.error {
-  color: #e22300;
-  font-size: calc(13px + 2 * ((100vw - 320px) / 880));
-}
-
 .main-menu ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1420,8 +1275,6 @@ dfn:hover {
   z-index: 2;
 }
 
-/* Keeps the info boxes on top of other elements */
-
 dfn:hover::after,
 dfn:hover::before {
   opacity: 1;
@@ -1438,7 +1291,7 @@ dfn:hover::before {
 .thumb-wrap {
   position: relative;
   padding-bottom: 56.25%;
-  /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  /* задаёт высоту контейнера для 16:9 (если 4:3 — поставить 75%) */
   height: 0;
   overflow: hidden;
 }
@@ -1550,18 +1403,6 @@ dfn:hover::before {
             flex-direction: column;
     max-width: 80%;
     margin: 20px auto;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    border: 1px solid #afafaf;
-  }
-
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  textarea:focus {
-    border: 1px solid #292929;
   }
 }
 
