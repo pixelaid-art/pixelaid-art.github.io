@@ -3147,7 +3147,7 @@ $(document).ready(function () {
 				sections.removeClass('active');
 
 				$(this).addClass('active');
-				nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+				nav.find('a[href="/#' + $(this).attr('id') + '"]').addClass('active');
 			}
 		});
 	});
