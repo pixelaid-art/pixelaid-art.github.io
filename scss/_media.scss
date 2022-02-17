@@ -1,0 +1,43 @@
+// Бреикпоинты: 576, 768, 992, 1200, 1400
+// @media (max-width: 575.98px) {}
+// @media (max-width: 767.98px) {}
+// @media (max-width: 991.98px) {}
+// @media (max-width: 1199.98px) {}
+// @media (max-width: 1399.98px) {}
+
+// Мобильное меню
+@media (max-width: 991.98px) {
+	.header__menu {
+		position: absolute;
+		top: -120vh;
+		left: 0;
+		background: #17292b;
+		width: 100%;
+		height: 110vh;
+		z-index: -1;
+		transition: 0.7s top;
+		ul {
+			flex-direction: column;
+			margin: 0;
+		}
+		li {
+			padding: 4px 15px;
+		}
+		a {
+			color: $light-color;
+			letter-spacing: 1.7px;
+			font-weight: 400;
+		}
+	}
+	.header__menu.show {
+		top: 40px;
+		padding-top: 30px;
+	}
+}
+@media (max-width: 575.98px) {
+	.header__links {
+		display: none;
+	}
+}
+
+

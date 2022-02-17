@@ -1,0 +1,67 @@
+.footer {
+	background: $dark-theme-color;
+	color: $light-color;
+	padding: 25px 0 15px;
+	&__links li {
+		padding: 0 10px;
+	}
+	&__link {
+		@include adaptiv-font(13, 11);
+		font-weight: normal;
+		color: $light-color;
+		letter-spacing: 0.8px;
+		&:hover,
+		&:active {
+			color: $cover-color;
+		}
+	}
+	&__logo {
+		img {
+			text-align: center;
+			margin-left: 4%;
+		}
+	}
+	&__payment {
+	}
+	&__copyright {
+		@include adaptiv-font(13, 11);
+		letter-spacing: 1.8px;
+		color: #78787a;
+		text-align: right;
+		@media (max-width: 767.98px) {
+			text-align-last: left;
+		}
+	}
+}
+.payment-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+	&__icon {
+		width: 105px;
+		height: 55px;
+		background-size: contain !important;
+		margin: 0 15px;
+		@media (max-width: 991.98px) {
+			width: 90px;
+		}
+		@media (max-width: 575.98px) {
+			width: 75px;
+		}
+	}
+
+	&__icon-1 {
+		background: url(../img/icons/paypal.png) no-repeat center center;
+	}
+
+	&__icon-2 {
+		// background: url(../img/icons/webmoney.png) no-repeat center center;
+	}
+
+	&__icon-3 {
+		background: url(../img/icons/iomoney.png) no-repeat center center;
+	}
+	&__icon-4 {
+		background: url(../img/icons/visa.png) no-repeat center center;
+	}
+}
