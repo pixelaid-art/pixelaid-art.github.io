@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Host: https://pixelaid.art
-Sitemap: https://pixelaid.art/sitemap.xml
+Host: https://pixelaid.space
+Sitemap: https://pixelaid.space/sitemap.xml
